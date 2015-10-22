@@ -60,12 +60,12 @@ table tr:nth-of-type(even) td:after
     height: 100%;
 }
 
-form input[type='submit']
+input[type='submit']
 {
     display: none;
 }
 
-form input:invalid + input:invalid + input[type='submit']
+.form input:valid ~ input:valid ~ input[type='submit']
 {
-    display: block;
+    display: inline-block;
 }
