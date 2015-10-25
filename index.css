@@ -1,16 +1,17 @@
-.table
+.my_table
 {
     overflow: hidden;
+    cellspacing: "0";
     border-collapse: collapse;
 }
 
-.table td,
-.table th
+.my_table td,
+.my_table th
 {
     position: relative;
 }
 
-table tr:nth-of-type(even) td:after
+.my_table tr:nth-of-type(even) td:after
 {
     content: "";
     position: absolute;
@@ -22,7 +23,7 @@ table tr:nth-of-type(even) td:after
     z-index: -2;
 }
 
-.table td:hover:before
+.my_table td:hover:before
 {
     content: "";
     position: absolute;
@@ -34,7 +35,7 @@ table tr:nth-of-type(even) td:after
     z-index: -1;
 }
 
-.table td:hover:after
+.my_table td:hover:after
 {
     content: "";
     position: absolute;
@@ -45,27 +46,27 @@ table tr:nth-of-type(even) td:after
     width: 10000px;
     z-index: -1;
 }
-.table td,
-.table th
+.my_table td,
+.my_table th
 {
     border: black solid 1px;
     text-align: center;
     font-size: 20px;
 }
 
-.table td img
+.my_table td img
 {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-input[type='submit']
+.my_form input[type='submit']
 {
     display: none;
 }
 
-.form input:valid ~ input:valid ~ input[type='submit']
+.my_form input:valid ~ input:valid ~ input[type='submit']
 {
     display: inline-block;
 }
