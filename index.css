@@ -35,7 +35,7 @@
     z-index: -1;
 }
 
-.my_table td:hover:after
+#my_table td:hover:after /*костыль, а что поделать?*/
 {
     content: "";
     position: absolute;
